@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Work | Gifted Hands Furniture & Interior Design</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        <h2>GIFTED HANDS</h2>
+        <span>Furniture & Interior Designs</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Our Work</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="page-hero projects-hero">
+
+    <div class="page-hero-content">
+
+        <div class="section-label">
+            <i></i>
+            OUR WORK
+        </div>
+
+        <h1>
+            Spaces We've<br>
+            <span>Created.</span>
+        </h1>
+
+        <p>
+            Explore our collection of furniture,
+            interiors and custom designs.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects-section">
+
+    <div class="projects-heading">
+
+        <div>
+            <div class="section-label">
+                <i></i>
+                FEATURED PROJECTS
+            </div>
+
+            <h2>
+                Our <span>Latest Work</span>
+            </h2>
+        </div>
+
+        <p>
+            Every project is carefully designed and crafted
+            with quality, comfort and style in mind.
+        </p>
+
+    </div>
+
+
+    <!-- ================= FILTERS ================= -->
+
+    <div class="project-filters">
+
+        <button class="filter-btn active" data-category="all">
+            ALL
+        </button>
+
+        <button class="filter-btn" data-category="Living Room">
+            LIVING ROOM
+        </button>
+
+        <button class="filter-btn" data-category="Bedroom">
+            BEDROOM
+        </button>
+
+        <button class="filter-btn" data-category="Dining">
+            DINING
+        </button>
+
+        <button class="filter-btn" data-category="Office">
+            OFFICE
+        </button>
+
+        <button class="filter-btn" data-category="Custom Furniture">
+            CUSTOM FURNITURE
+        </button>
+
+    </div>
+
+
+    <!-- ================= PROJECT GRID ================= -->
+
+    <div id="projects-container" class="projects-grid">
+
+        <!-- Projects will be loaded from Supabase -->
+
+        <div class="projects-loading">
+
+            <div class="loading-spinner"></div>
+
+            <p>
+                Loading our projects...
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= NO PROJECTS ================= -->
+
+    <div id="no-projects" class="no-projects">
+
+        <i class="fa-solid fa-couch"></i>
+
+        <h3>
+            No Projects Found
+        </h3>
+
+        <p>
+            We couldn't find any projects in this category.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT DETAIL MODAL ================= -->
+
+<div id="project-modal" class="project-modal">
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            id="modal-close"
+            aria-label="Close project"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+
+        <div class="modal-image">
+
+            <img
+                id="modal-project-image"
+                src=""
+                alt=""
+            >
+
+        </div>
+
+
+        <div class="modal-info">
+
+            <span
+                id="modal-project-category"
+                class="modal-category"
+            ></span>
+
+            <h2 id="modal-project-title"></h2>
+
+            <div class="modal-location">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span id="modal-project-location"></span>
+
+            </div>
+
+            <p id="modal-project-description"></p>
+
+
+            <a
+                href="#"
+                id="modal-whatsapp"
+                class="gold-button"
+                target="_blank"
+            >
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                REQUEST A SIMILAR DESIGN
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-banner">
+
+    <div>
+
+        <span>HAVE A PROJECT IN MIND?</span>
+
+        <h2>
+            Let's create something beautiful.
+        </h2>
+
+    </div>
+
+    <a href="contact.html" class="gold-button">
+
+        GET IN TOUCH
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+    </a>
+
+</section>
+
+
+<!-- ================= WHATSAPP ================= -->
+
+<a
+    href="#"
+    class="whatsapp-float"
+    aria-label="Contact us on WhatsApp"
+>
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-top">
+
+
+        <div class="footer-brand">
+
+            <h2>GIFTED HANDS</h2>
+
+            <p>
+                Furniture & Interior Designs
+            </p>
+
+            <span>
+                Bringing Your Dream Home to Reality.
+            </span>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>QUICK LINKS</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Our Work</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Trustpilot">
+                    <i class="fa-solid fa-star"></i>
+                </a>
+
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="#" aria-label="Threads">
+                    <i class="fa-brands fa-threads"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Gifted Hands Furniture & Interior Designs.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= SUPABASE ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="js/projects.js"></script>
+
+</body>
+  </html>
